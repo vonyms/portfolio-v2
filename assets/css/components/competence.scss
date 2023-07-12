@@ -1,0 +1,190 @@
+
+
+
+
+
+#techList {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    text-transform: uppercase;
+    color: #666;
+    height: 50vh;
+    @media screen and (max-width: 800px) {
+      height: 100%;
+}
+  }
+  
+  #techList li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media screen and (max-width: 800px) {
+      position: relative;
+      transform: initial;
+      font-size: 1.2rem;
+    }
+  }
+  
+  .html5 {
+    font-size: 8em;
+    font-weight: 700;
+    letter-spacing: -.05em;
+  }
+  
+  .javascript {
+    font-size: 1.4em;
+    letter-spacing: -.04em;
+    font-weight: 400;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform: 
+        rotate(90deg)
+        translate(3.64em, -12.6em);
+    -moz-transform: 
+        rotate(90deg)
+        translate(3.64em, -12.6em);
+  }
+  
+  .accessibility {
+    font-size: 1.4em;
+    letter-spacing: -.05em;
+    font-weight: 300;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform: 
+        rotate(90deg)
+        translate(3.6em, -17.45em);
+    -moz-transform: 
+        rotate(90deg)
+        translate(3.6em, -17.45em);
+  }
+  
+  .responsive {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: -.03em;
+    word-spacing: .3em;
+    -webkit-transform: 
+        translate(.18em, 4.8em);
+    -moz-transform: 
+        translate(.18em, 4.8em);
+  }
+  
+  .usability {
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: -.04em;
+    -webkit-transform: 
+          translate(5.4em, 3.06em);
+    -moz-transform: 
+          translate(5.4em, 3.06em);
+  }
+  
+  .ajax {
+    font-size: 2.4em;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform: 
+        rotate(90deg)
+        translate(5.3em, -5.2em);
+    -moz-transform: 
+        rotate(90deg)
+        translate(5.3em, -5.2em);
+  }
+  
+  .css3 {
+    font-size: 6.8em;
+    letter-spacing: .01em;
+    font-weight: 700;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: 
+        rotate(90deg)
+        translate(.64em, -3.6em);
+    -moz-transform: 
+        rotate(90deg)
+        translate(.64em, -3.6em);
+  }
+  
+  .jquery {
+    font-size: 3.8em;
+    letter-spacing: 0.045em;
+    font-weight: 700;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: 
+        translate(4.28em, 3.13em);
+    -moz-transform: 
+        translate(4.28em, 3.13em);
+  }
+  
+  .objectoriented {
+    font-size: 1.9em;
+    font-weight: 700;
+    letter-spacing: -.010em;
+    -webkit-transform: 
+          translate(.2em, 6.1em);
+    -moz-transform: 
+          translate(.2em, 6.1em);
+  }
+  
+  .wordpress {
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+    -webkit-transform: 
+          translate(.15em, 4.48em);
+    -moz-transform: 
+          translate(.15em, 4.48em);
+  }
+  
+  .seo {
+    font-size: 4em;
+    font-weight: 300;
+    letter-spacing: -0.07em;
+    -webkit-transform: 
+          translate(5.46em, .45em);
+    -moz-transform: 
+          translate(5.46em, .45em);
+  }
+  
+  .crossbrowser {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    word-spacing: .2em;
+    -webkit-transform: 
+          translate(.28em, 8.25em);
+    -moz-transform: 
+          translate(.28em, 8.25em);
+  }
+  
+  .webstandards {
+    font-size: 2em;
+    font-weight: 300;
+    letter-spacing: 0em;
+    word-spacing: .1em;
+    -webkit-transform: 
+          translate(11.2em, 8.3em);
+    -moz-transform: 
+          translate(11.2em, 8.3em);
+  }
+  
+  .jg {
+    color: #ee5d29;
+    font-size: 3.4em;
+    font-weight: 700;
+    letter-spacing: -.03em;
+    -webkit-transform: 
+          translate(6.55em, 1.6em);
+    -moz-transform: 
+          translate(6.55em, 1.6em);
+  }
+
+
+
+
+  
