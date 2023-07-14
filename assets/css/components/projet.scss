@@ -144,6 +144,9 @@ $color_1: #0fc70f;
                 .address {
                     color: gray;
                     font-size: 13px;
+					a {
+						color: $color_1 !important;
+					}
                 }
 				&:last-child {
 					.info {

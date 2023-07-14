@@ -124,7 +124,6 @@ body {
   }
 }
 * .navbar {
-  position: relative;
   background: #fff;
   width: 60px;
   height: 97vh;
@@ -134,6 +133,7 @@ body {
   position: fixed;
   top: 10px;
   left: 10px;
+  z-index: 1;
 }
 @media screen and (max-width: 800px) {
   * .navbar {
@@ -509,6 +509,21 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.download {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff; /* Couleur de fond du bouton */
+  border: 1px solid #666;
+  border-radius: 50%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #techList {
   position: relative;
   list-style: none;
@@ -847,6 +862,9 @@ body {
 .resume.projet .resume_right ul li .address {
   color: gray;
   font-size: 13px;
+}
+.resume.projet .resume_right ul li .address a {
+  color: #0fc70f !important;
 }
 .resume.projet .resume_right ul li:last-child .info {
   margin-bottom: 0;

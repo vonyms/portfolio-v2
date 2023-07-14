@@ -136,6 +136,9 @@
   color: gray;
   font-size: 13px;
 }
+.resume.projet .resume_right ul li .address a {
+  color: #0fc70f !important;
+}
 .resume.projet .resume_right ul li:last-child .info {
   margin-bottom: 0;
 }

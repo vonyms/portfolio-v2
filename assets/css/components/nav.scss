@@ -3,7 +3,6 @@
 
 .navbar
 {
-    position: relative;
     background: #fff;
     width: 60px;
     height: 97vh;
@@ -13,6 +12,7 @@
     position: fixed;
     top: 10px;
     left: 10px;
+    z-index: 1;
     
     @media screen and (max-width: 800px) {
         height: 100%;
