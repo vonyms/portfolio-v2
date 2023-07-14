@@ -8,6 +8,7 @@
   .resume {
     padding-left: 100px;
     flex-direction: column;
+    width: initial !important;
   }
 }
 .resume .title {
@@ -64,6 +65,11 @@
   .resume .resume_right .resume_hobby ul {
     flex-wrap: wrap;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resume .resume_right {
+    width: initial !important;
   }
 }
 .resume .resume_right .bold {

@@ -9,6 +9,7 @@ $color_1: #ffa117;
 	@media screen and (max-width: 800px) {
 		padding-left: 100px;
 		flex-direction: column;
+		width: initial !important;
 	}
 	.title {
 		margin-bottom: 20px;
@@ -67,6 +68,9 @@ $color_1: #ffa117;
 		width: 520px;
 		background: #000;
 		padding: 25px;
+		@media screen and (max-width: 800px) {
+			width: initial !important;
+		}
 		.bold {
 			color: $color_1;
 		}

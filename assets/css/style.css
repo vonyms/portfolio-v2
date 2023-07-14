@@ -300,7 +300,8 @@ body {
   .main-home--int {
     flex-direction: column-reverse;
     padding-top: 100px;
-    padding-left: 10px;
+    padding-left: 100px;
+    width: initial;
   }
 }
 .main-home--item img {
@@ -371,6 +372,7 @@ body {
   .resume {
     padding-left: 100px;
     flex-direction: column;
+    width: initial !important;
   }
 }
 .resume .title {
@@ -427,6 +429,11 @@ body {
   .resume .resume_right .resume_hobby ul {
     flex-wrap: wrap;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resume .resume_right {
+    width: initial !important;
   }
 }
 .resume .resume_right .bold {

@@ -18,7 +18,8 @@
   .main-home--int {
     flex-direction: column-reverse;
     padding-top: 100px;
-    padding-left: 10px;
+    padding-left: 100px;
+    width: initial;
   }
 }
 .main-home--item img {
