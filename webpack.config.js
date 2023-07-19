@@ -8,5 +8,13 @@ module.exports = {
     },
     devServer: {
         static: path.resolve(__dirname, './dist'),
-    }
+    },
+    module: {
+        rules: [
+          {
+            test: /\.(scss|css)$/,
+            use: ['style-loader', 'css-loader', 'sass-loader'],
+          },
+        ],
+    },
 }
