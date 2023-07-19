@@ -12,21 +12,23 @@
     text-transform: uppercase;
     color: #666;
     height: 50vh;
+    font-family: 'Raleway', sans-serif;
     @media screen and (max-width: 800px) {
       height: 100%;
-}
-  }
-  
-  #techList li {
-    position: absolute;
-    top: 0;
-    left: 0;
-    @media screen and (max-width: 800px) {
-      position: relative;
-      transform: initial;
-      font-size: 1.2rem;
+    }
+    li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @media screen and (max-width: 800px) {
+        position: relative;
+        transform: initial;
+        font-size: 1.2rem;
+      }
     }
   }
+  
+  #techList 
   
   .html5 {
     font-size: 8em;
