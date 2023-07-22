@@ -1,0 +1,183 @@
+$color_1: #ffa117;
+
+.resume {
+	width: 800px;
+	height: auto;
+	display: flex;
+	margin: 50px auto;
+	
+	@media screen and (max-width: 800px) {
+		padding-left: 100px;
+		flex-direction: column;
+		width: initial !important;
+	}
+	.title {
+		margin-bottom: 20px;
+	}
+	.resume_item {
+		padding: 25px 0;
+		border-bottom: 2px solid #ffa21740;
+	}
+	.resume_right {
+		.resume_item {
+			&:last-child {
+				border-bottom: 0px;
+			}
+		}
+		.resume_hobby {
+			ul {
+				li {
+					width: 80px;
+					height: 80px;
+					border: 2px solid $color_1;
+					border-radius: 50%;
+					position: relative;
+					color: $color_1;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					&:before {
+						content: "";
+						position: absolute;
+						top: 40px;
+						right: -52px;
+						width: 50px;
+						height: 2px;
+						background: $color_1;
+						@media screen and (max-width: 800px) {
+							content: initial;
+						}
+					}
+					&:last-child {
+						&:before {
+							display: none;
+						}
+					}
+					.item-hobby {
+						font-size: 2rem;
+					}
+				}
+				display: flex;
+				justify-content: space-between;
+				@media screen and (max-width: 800px) {
+					flex-wrap: wrap;
+					gap: 10px;
+				}
+			}
+		}
+		width: 520px;
+		background: #000;
+		padding: 25px;
+		@media screen and (max-width: 800px) {
+			width: initial !important;
+		}
+		.bold {
+			color: $color_1;
+		}
+		.resume_work {
+			ul {
+				padding-left: 40px;
+				overflow: hidden;
+				li {
+					&:before {
+						content: "";
+						position: absolute;
+						top: 5px;
+						left: -25px;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						border: 2px solid $color_1;
+					}
+					&:after {
+						content: "";
+						position: absolute;
+						top: 14px;
+						left: -21px;
+						width: 2px;
+						height: 90%;
+						background: $color_1;
+					}
+				}
+			}
+		}
+		.resume_education {
+			ul {
+				padding-left: 40px;
+				overflow: hidden;
+				li {
+					&:before {
+						content: "";
+						position: absolute;
+						top: 5px;
+						left: -25px;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						border: 2px solid $color_1;
+					}
+					&:after {
+						content: "";
+						position: absolute;
+						top: 14px;
+						left: -21px;
+						width: 2px;
+						height: 85%;
+						background: $color_1;
+					}
+				}
+			}
+		}
+		ul {
+			li {
+				position: relative;
+				margin-top: 35px;
+				.date {
+					font-size: 16px;
+					font-weight: 500;
+					margin-bottom: 15px;
+				}
+				.info {
+					text-transform: uppercase;
+				}
+                .detail-info {
+                    line-height: 1.6;
+                    padding-top: 3px;
+                    font-size: 14px;
+                }
+                .address {
+                    color: gray;
+                    font-size: 13px;
+                }
+				&:last-child {
+					.info {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	.icon {
+		i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.download {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff; /* Couleur de fond du bouton */
+	border: 1px solid #666;
+	border-radius: 50%;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }

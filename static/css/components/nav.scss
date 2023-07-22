@@ -1,0 +1,144 @@
+$color_1: #222;
+$color_2: var(--clr);
+$color_3: #fff;
+$background-color_1: var(--clr);
+
+/* When Navbar is Open  */
+/* list tag starts here  */
+.navbar {
+	background: #fff;
+	width: 60px;
+	height: 97vh;
+	inset: 10px;
+	overflow: hidden;
+	transition: .5s;
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+	@media screen and (max-width: 800px) { height: 100%; }
+	.toggleMenu {
+		&::before {
+			content: '';
+			width: 30px;
+			height: 3px;
+			background: #000;
+			position: absolute;
+			top: 18px;
+			box-shadow: 0 7px #000;
+			transition: .1s;
+		}
+		&::after {
+			content: '';
+			width: 30px;
+			height: 3px;
+			background: #000;
+			position: absolute;
+			top: 32px;
+			transition: .1s;
+		}
+	}
+	.list {
+		transform: translateY(50px);
+		height: 500px;
+		list-style: none;
+		position: relative;
+		li {
+			.link {
+				position: relative;
+				display: flex;
+				align-items: center;
+				height: 45px;
+				list-style: none;
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $color_1;
+				margin: 0 0 40px 5px;
+				&::before {
+					content: '';
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					background: transparent;
+					right: 0px;
+					top: -20px;
+					border-radius: 0 0 20px 0;
+				}
+				&::after {
+					content: '';
+					position: absolute;
+					width: 20px;
+					height: 20px;
+					background: transparent;
+					right: 0px;
+					bottom: -20px;
+					border-radius: 0 20px 0 0;
+				}
+				.icon {
+					display: grid;
+					place-items: center;
+					height: 40px;
+					width: 40px;
+					font-size: 1.5em;
+					border-radius: 40px;
+					margin-left: 5px;
+					position: absolute;
+					transition: .5s;
+				}
+				.text {
+					width: calc(250px - 60px);
+					height: 100%;
+					display: grid;
+					place-items: center;
+					font-weight: 500;
+					position: absolute;
+					left: 60px;
+					transition: .5s;
+				}
+				&:hover {
+					color: $color_2;
+				}
+			}
+			.select {
+				background: #000;
+				color: $color_2;
+				border-radius: 45px 0 0 45px;
+				&::before {
+					box-shadow: 5px 5px 0 2px #000;
+				}
+				&::after {
+					box-shadow: 5px -5px 0 2px #000;
+				}
+				.icon {
+					color: $color_3;
+					background-color: $background-color_1;
+				}
+			}
+		}
+	}
+    .toggleMenu {
+        width: 60px;
+        height: 50px;
+        display: grid;
+        place-items: center;
+        position: relative;
+        left: 0px;
+        transition: .5s;
+    }
+}
+
+.navActive {
+	width: 250px;
+	.toggleMenu {
+		left: 200px;
+		&::before {
+			top: 25px;
+			box-shadow: none;
+			rotate: -135deg;
+		}
+		&::after {
+			top: 25px;
+			rotate: 135deg;
+		}
+	}
+}

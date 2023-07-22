@@ -1,0 +1,76 @@
+.main {
+    &-home {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 800px) {
+            height: initial;
+        }
+        &--int {
+            display: flex;
+            gap: 40px;
+            width: 60%;
+            @media screen and (max-width: 800px) {
+                flex-direction: column-reverse;
+                padding-top: 100px;
+                padding-left: 100px;
+                width: initial;
+            }
+        }
+        &--item {
+            img {
+                height: 400px;
+                width: 400px;
+                object-fit: cover;
+                border-radius: 50%;
+                @media screen and (max-width: 1100px) {
+                    height: 300px;
+                    width: 300px;
+                }
+            }
+            &-int {
+                line-height: 1.5;
+            }
+            &-menu {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bold;
+                @media screen and (max-width: 1100px) {
+                    width: 70px;
+                    height: 70px;
+                    font-size: .8rem;
+                }
+                a {
+                    text-decoration: none;
+                    color: initial;
+                    transition: all .5s ease-in-out;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+                &:first-child {
+                    background-color: #ffa117;
+                }
+                &:nth-child(2) {
+                    background-color: #0fc70f;
+                }
+                &:nth-child(3) {
+                    background-color: #2196f3;
+                }
+            }
+        }
+        &--block-menu {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+}
