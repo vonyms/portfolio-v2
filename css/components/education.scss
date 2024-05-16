@@ -1,8 +1,11 @@
-$color_1: #ffa117;
+$color_1: #9f06e6;
 
-.resume {
+.resume.education {
 	width: 800px;
-	height: auto;
+	@media screen and (min-width: 800px) {
+		height: 60vh;
+    	align-items: center;
+	}
 	display: flex;
 	margin: 50px auto;
 	
@@ -17,13 +20,6 @@ $color_1: #ffa117;
 	.resume_item {
 		padding: 25px 0;
 		border-bottom: 2px solid #ffa21740;
-	}
-	.resume_left {
-		.resume_item {
-			.bold {
-				font-size: 13px;
-			}
-		}
 	}
 	.resume_right {
 		.resume_item {
@@ -208,3 +204,14 @@ $color_1: #ffa117;
 	}
 
   }
+
+    .resume {
+      &.education {
+            .rounded-menu {
+                  background-color: $color_1;
+            }
+            .resume_right .bold {
+                  color: $color_1;
+            }
+      } 
+}

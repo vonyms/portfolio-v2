@@ -1,8 +1,12 @@
-$color_1: #ffa117;
+$color_1: #ff17d8;
 
-.resume {
+.resume.loisir {
 	width: 800px;
-	height: auto;
+	
+	@media screen and (min-width: 800px) {
+		height: 60vh;
+    	align-items: center;
+	}
 	display: flex;
 	margin: 50px auto;
 	
@@ -11,19 +15,18 @@ $color_1: #ffa117;
 		flex-direction: column;
 		width: initial !important;
 	}
+	.rounded-menu {
+		background-color: $color_1;
+	}
+	.resume_right .bold {
+			color: $color_1;
+	}
 	.title {
 		margin-bottom: 20px;
 	}
 	.resume_item {
 		padding: 25px 0;
 		border-bottom: 2px solid #ffa21740;
-	}
-	.resume_left {
-		.resume_item {
-			.bold {
-				font-size: 13px;
-			}
-		}
 	}
 	.resume_right {
 		.resume_item {

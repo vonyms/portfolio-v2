@@ -5,7 +5,7 @@
   padding: 0;
   font-size: 100%;
   text-transform: uppercase;
-  color: #666;
+  color: #2196f3;
   height: 50vh;
   font-family: "Oswald", sans-serif;
 }
@@ -141,10 +141,16 @@
 }
 
 .jg {
-  color: #ee5d29;
   font-size: 3.4em;
   font-weight: 700;
   letter-spacing: -0.03em;
   -webkit-transform: translate(6.55em, 1.6em);
   -moz-transform: translate(6.55em, 1.6em);
+}
+
+.resume.competence .rounded-menu {
+  background-color: #2196f3;
+}
+.resume.competence .resume_right .bold {
+  color: #2196f3;
 }/*# sourceMappingURL=competence.css.map */

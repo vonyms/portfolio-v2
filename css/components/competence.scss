@@ -1,4 +1,4 @@
-
+$color_1: #2196f3;
 #techList {
       position: relative;
       list-style: none;
@@ -6,7 +6,7 @@
       padding: 0;
       font-size: 100%;
       text-transform: uppercase;
-      color: #666;
+      color: $color_1;
       height: 50vh;
       font-family: 'Oswald', sans-serif;
       @media screen and (max-width: 800px) {
@@ -170,7 +170,6 @@
     }
     
     .jg {
-      color: #ee5d29;
       font-size: 3.4em;
       font-weight: 700;
       letter-spacing: -.03em;
@@ -179,8 +178,14 @@
       -moz-transform: 
             translate(6.55em, 1.6em);
     }
-  
-  
-  
-  
-    
+
+    .resume {
+      &.competence {
+            .rounded-menu {
+                  background-color: $color_1;
+            }
+            .resume_right .bold {
+                  color: $color_1;
+            }
+      } 
+}

@@ -10,7 +10,7 @@
         &--int {
             display: flex;
             gap: 40px;
-            width: 60%;
+            width: 80%;
             @media screen and (max-width: 800px) {
                 flex-direction: column-reverse;
                 padding-top: 100px;
@@ -52,6 +52,7 @@
                     text-decoration: none;
                     color: initial;
                     transition: all .5s ease-in-out;
+                    font-size: 13px;
                     &:hover {
                         color: #fff;
                     }
@@ -60,11 +61,20 @@
                     background-color: #ffa117;
                 }
                 &:nth-child(2) {
-                    background-color: #0fc70f;
-                }
-                &:nth-child(3) {
                     background-color: #2196f3;
                 }
+                &:nth-child(3) {
+                    background-color: #0fc70f;
+                }
+                &:nth-child(4) {
+                    background-color: #9f06e6 ;
+                }
+                &:nth-child(5) {
+                    background-color: #f008c9;
+                }
+                // &:nth-child(6) {
+                //     background-color: #1ae9de;
+                // }
             }
         }
         &--block-menu {

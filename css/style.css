@@ -131,23 +131,6 @@ body {
   }
 }
 
-.scale-up-center {
-  animation: scale-up-center 0.8s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-/**
- * ----------------------------------------
- * animation scale-up-center
- * ----------------------------------------
- */
-@keyframes scale-up-center {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 /* When Navbar is Open  */
 /* list tag starts here  */
 .navbar {
@@ -302,7 +285,7 @@ body {
 .main-home--int {
   display: flex;
   gap: 40px;
-  width: 60%;
+  width: 80%;
 }
 @media screen and (max-width: 800px) {
   .main-home--int {
@@ -351,6 +334,7 @@ body {
   text-decoration: none;
   color: initial;
   transition: all 0.5s ease-in-out;
+  font-size: 13px;
 }
 .main-home--item-menu a:hover {
   color: #fff;
@@ -359,10 +343,16 @@ body {
   background-color: #ffa117;
 }
 .main-home--item-menu:nth-child(2) {
-  background-color: #0fc70f;
+  background-color: #2196f3;
 }
 .main-home--item-menu:nth-child(3) {
-  background-color: #2196f3;
+  background-color: #0fc70f;
+}
+.main-home--item-menu:nth-child(4) {
+  background-color: #9f06e6;
+}
+.main-home--item-menu:nth-child(5) {
+  background-color: #f008c9;
 }
 .main-home--block-menu {
   display: flex;
@@ -389,6 +379,9 @@ body {
 .resume .resume_item {
   padding: 25px 0;
   border-bottom: 2px solid rgba(255, 162, 23, 0.2509803922);
+}
+.resume .resume_left .resume_item .bold {
+  font-size: 13px;
 }
 .resume .resume_right {
   width: 520px;
@@ -565,7 +558,7 @@ body {
   padding: 0;
   font-size: 100%;
   text-transform: uppercase;
-  color: #666;
+  color: #2196f3;
   height: 50vh;
   font-family: "Oswald", sans-serif;
 }
@@ -701,12 +694,218 @@ body {
 }
 
 .jg {
-  color: #ee5d29;
   font-size: 3.4em;
   font-weight: 700;
   letter-spacing: -0.03em;
   -webkit-transform: translate(6.55em, 1.6em);
   -moz-transform: translate(6.55em, 1.6em);
+}
+
+.resume.competence .rounded-menu {
+  background-color: #2196f3;
+}
+.resume.competence .resume_right .bold {
+  color: #2196f3;
+}
+
+.resume.education {
+  width: 800px;
+  display: flex;
+  margin: 50px auto;
+}
+@media screen and (min-width: 800px) {
+  .resume.education {
+    height: 60vh;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resume.education {
+    padding-left: 100px;
+    flex-direction: column;
+    width: initial !important;
+  }
+}
+.resume.education .title {
+  margin-bottom: 20px;
+}
+.resume.education .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid rgba(255, 162, 23, 0.2509803922);
+}
+.resume.education .resume_right {
+  width: 520px;
+  background: #000;
+  padding: 25px;
+}
+.resume.education .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+.resume.education .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+.resume.education .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #9f06e6;
+  border-radius: 50%;
+  position: relative;
+  color: #9f06e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume.education .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #9f06e6;
+}
+@media screen and (max-width: 800px) {
+  .resume.education .resume_right .resume_hobby ul li:before {
+    content: initial;
+  }
+}
+.resume.education .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+.resume.education .resume_right .resume_hobby ul li .item-hobby {
+  font-size: 2rem;
+}
+@media screen and (max-width: 800px) {
+  .resume.education .resume_right .resume_hobby ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resume.education .resume_right {
+    width: initial !important;
+  }
+}
+.resume.education .resume_right .bold {
+  color: #9f06e6;
+}
+.resume.education .resume_right .resume_work ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+.resume.education .resume_right .resume_work ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #9f06e6;
+}
+.resume.education .resume_right .resume_work ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 90%;
+  background: #9f06e6;
+}
+.resume.education .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+.resume.education .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #9f06e6;
+}
+.resume.education .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 85%;
+  background: #9f06e6;
+}
+.resume.education .resume_right ul li {
+  position: relative;
+  margin-top: 35px;
+}
+.resume.education .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.resume.education .resume_right ul li .info {
+  text-transform: uppercase;
+}
+.resume.education .resume_right ul li .detail-info {
+  line-height: 1.6;
+  padding-top: 3px;
+  font-size: 14px;
+}
+.resume.education .resume_right ul li .address {
+  color: gray;
+  font-size: 13px;
+}
+.resume.education .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+.resume.education .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.download {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff; /* Couleur de fond du bouton */
+  border: 1px solid #666;
+  border-radius: 50%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff; /* Couleur de fond du bouton */
+  border: 1px solid #666;
+  border-radius: 50%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mail svg {
+  width: 29px;
+  padding-top: 5px;
+}
+
+.resume.education .rounded-menu {
+  background-color: #9f06e6;
+}
+.resume.education .resume_right .bold {
+  color: #9f06e6;
 }
 
 :root {
@@ -875,4 +1074,203 @@ body {
 }
 .resume.projet .main-home--item-menu:first-child {
   background-color: #0fc70f;
+}
+
+.resume.loisir {
+  width: 800px;
+  display: flex;
+  margin: 50px auto;
+}
+@media screen and (min-width: 800px) {
+  .resume.loisir {
+    height: 60vh;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resume.loisir {
+    padding-left: 100px;
+    flex-direction: column;
+    width: initial !important;
+  }
+}
+.resume.loisir .rounded-menu {
+  background-color: #ff17d8;
+}
+.resume.loisir .resume_right .bold {
+  color: #ff17d8;
+}
+.resume.loisir .title {
+  margin-bottom: 20px;
+}
+.resume.loisir .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid rgba(255, 162, 23, 0.2509803922);
+}
+.resume.loisir .resume_right {
+  width: 520px;
+  background: #000;
+  padding: 25px;
+}
+.resume.loisir .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+.resume.loisir .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+.resume.loisir .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ff17d8;
+  border-radius: 50%;
+  position: relative;
+  color: #ff17d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume.loisir .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #ff17d8;
+}
+@media screen and (max-width: 800px) {
+  .resume.loisir .resume_right .resume_hobby ul li:before {
+    content: initial;
+  }
+}
+.resume.loisir .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+.resume.loisir .resume_right .resume_hobby ul li .item-hobby {
+  font-size: 2rem;
+}
+@media screen and (max-width: 800px) {
+  .resume.loisir .resume_right .resume_hobby ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resume.loisir .resume_right {
+    width: initial !important;
+  }
+}
+.resume.loisir .resume_right .bold {
+  color: #ff17d8;
+}
+.resume.loisir .resume_right .resume_work ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+.resume.loisir .resume_right .resume_work ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #ff17d8;
+}
+.resume.loisir .resume_right .resume_work ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 90%;
+  background: #ff17d8;
+}
+.resume.loisir .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+.resume.loisir .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #ff17d8;
+}
+.resume.loisir .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 85%;
+  background: #ff17d8;
+}
+.resume.loisir .resume_right ul li {
+  position: relative;
+  margin-top: 35px;
+}
+.resume.loisir .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.resume.loisir .resume_right ul li .info {
+  text-transform: uppercase;
+}
+.resume.loisir .resume_right ul li .detail-info {
+  line-height: 1.6;
+  padding-top: 3px;
+  font-size: 14px;
+}
+.resume.loisir .resume_right ul li .address {
+  color: gray;
+  font-size: 13px;
+}
+.resume.loisir .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+.resume.loisir .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.download {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff; /* Couleur de fond du bouton */
+  border: 1px solid #666;
+  border-radius: 50%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mail {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff; /* Couleur de fond du bouton */
+  border: 1px solid #666;
+  border-radius: 50%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mail svg {
+  width: 29px;
+  padding-top: 5px;
 }/*# sourceMappingURL=style.css.map */
