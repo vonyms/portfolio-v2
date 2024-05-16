@@ -3,54 +3,11 @@
 }
 
 .section-contact {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    button {
-        cursor: pointer;
-        padding: 10px;
-        width: 100%;
-        height: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 20px;
-        text-align: center;
-        border-radius: 10px;
-            background: var(--ld-color);
-    }
-
-    .github,
-    .linkedin {
-        svg {
-           width: 50px; 
-        }
-        
-        &:hover {
-            background: #fff;
-            border-radius: 10px;
-        }
-    }
-
-
-    .container {
-        display: grid;
+    height: 20vh;
+    &--int {
+        display: flex;
         justify-content: center;
-        grid-template-columns: 100px 100px;
-        gap: 20px;
-        padding: 50px;
-        @media screen and (max-width: 800px) {
-            grid-template-columns: 160px;
-        }
-    }
-
-    .item {
-        height: 150px;
-        width: 100%;
-        @media screen and (max-width: 800px) {
-            height: 160px;
-        }
+        align-items: center;
+        flex-direction: column;
     }
 }
